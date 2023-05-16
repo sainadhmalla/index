@@ -1,0 +1,345 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+p,h1,h2,h3,h4,h5,h6{padding: 0; margin: 0;}
+ol, ul{padding: 0; margin: 0}
+body{font-family: 'Poppins', sans-serif; font-size:17px; background: #fff; color: #11142D; line-height: 1.75; }
+.topDiv{width: 100%; float: left;}
+.topHdrDiv{width: 100%; float: left; background: #fff6ee; padding: 15px 0;}
+.topHdrDiv h1{font-size: 74px; text-transform: uppercase; text-align: center; font-family: 'Inter', sans-serif; font-weight: 600; color: #641c1c}
+.topHdrDiv h1 span{color: #d77916}
+.btmHdrDiv{width: 100%; float: left; border-bottom: 3px solid #43B4AC;}
+.lgoDivIn{width: 100%; float: left;}
+.lgoMoe img{width: 210px;padding-bottom: 20px;}
+.lgoOnod img{width: 100%}
+.hdrCntrIn{width: 100%; float: left; margin-top: 50px}
+.dropdown {width: 100%;}
+@media (min-width: 768px) {
+  .dropdown { width: 100%; }
+}
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__select {
+  transform: scaleY(1);
+}
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__filter:after {
+  transform: rotate(-135deg);
+}
+.dropdown__options-filter { width: 100%; cursor: pointer;}
+.dropdown__filter {position: relative; display: flex; padding: 10px; color: #595959; background-color: #fff; border: 1px solid #d48f51; border-radius: 0px; font-size: 14px; text-transform: uppercase;
+  transition: 0.3s; list-style-type: none;}
+.dropdown__filter:focus { border: 0px solid #D77916; outline: none; box-shadow: 0 0 5px 3px rgba(215,121,22,0.6);}
+.dropdown__filter::after { position: absolute; top: 45%; right: 20px; content: ""; width: 10px;
+  height: 10px; border-right: 2px solid #595959; border-bottom: 2px solid #595959; transform: rotate(45deg) translateX(-45%); transition: 0.2s ease-in-out;}
+.dropdown__select { position: absolute; top: 100%; left: 0; width: 100%; margin-top: 5px; overflow: hidden; box-shadow: 0 5px 10px 0 rgba(152, 152, 152, 0.6); transform: scaleY(0); transform-origin: top; font-weight: 300; transition: 0.2s ease-in-out; z-index: 9999}
+.dropdown__select-option { padding: 10px 20px; background-color: #fff; border-bottom: 1px solid #eee;
+  transition: 0.3s; font-weight: 500}
+.dropdown__select-option:last-of-type { border-bottom: 0;}
+.dropdown__select-option:hover {background-color: #f9f9f9;}
+.lgoMoe .lgoDivIn{margin-top: 25px}
+.dropdown__filter-selected{text-align: center; width: 100%; font-size: 23px; font-weight: 500;}
+.mainnCntSec{width: 100%; float: left; padding: 15px 0}
+.mainCntDivIn{width: 100%; float: left; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1); padding: 25px 15px}
+.affiBrdhdng{width: 100%; float: left; text-align: center; margin-bottom: 20px}
+.mainHdng{font-family: 'Inter', sans-serif; font-weight: 500; font-size: 39px; color: #1171d3;
+position: relative; width: auto; text-align: center; padding-left: 0px; margin-bottom: 45px}
+.mainHdng:before{content: ''; width: 33%; display: inline-block; height: 2px; background: #1171d3; position: absolute; bottom: -10px; left: 0; right: 0; margin: auto;}
+.mainHdng:after{content: ''; width: 15%; display: inline-block; height: 5px; background: #d77916; position: absolute; bottom: -11px; left: 0; right: 0; margin: auto;}
+.mainCntDiv{width: 100%; float: left; margin-top: 25px}
+.form-control{height: 45px; line-height: 45px; border-color: #1171d3}
+.form-group label{font-size: 18px; font-weight: 500; width: 100%; float: left;}
+.sbmtBtn{padding-left: 0}
+.btn-primary{background: #3daaaf; border: none; font-size: 17px; font-weight: 500; height: 45px; line-height: 34px;}
+.btn-primary:hover,.btn-primary:focus{background: #3daaaf;}
+.nmbrLstBx{width: 100%; float: left; margin-top: 10px}
+.bx_1{margin-bottom: 15px}
+.bx_1 .bx_1In{width: 100%; float: left; text-align: center; padding: 0 15px; color: #fff; font-size: 22px; padding-top: 15px; box-shadow: 0 0 2rem 0 rgb(189 86 46 / 10%); background: #fff; color:#333; height: 245px }
+.bx_1 .bx_1In h4 span{display: block; font-weight: 600}
+.u_1{display: inline-block; margin-right: 12px;}
+/*.bx_1 .bx_1In{background: #17a2b8}
+.bx_2 .bx_1In{background: #f25920}
+.bx_3 .bx_1In{background: #28a745}
+.bx_4 .bx_1In{background: #3171db}
+.bx_5 .bx_1In{background: #f7921c}
+.bx_6 .bx_1In{background: #8f5743}
+.bx_7 .bx_1In{background: #17a2b8}
+.bx_8 .bx_1In{background: #28a745}*/
+/*.instDivBx .affiBrdhdng{text-align: left; margin-bottom: 35px}
+.instDivBx .mainHdng::before{left: 0; right: auto; width: 15%}
+.instDivBx .mainHdng::after{left: 0; right: auto; width: 7%}*/
+
+.facltDvBx .affiBrdhdng{text-align: left; margin-bottom: 35px}
+.facltDvBx .mainHdng::before{left: 0; right: auto; width: 15%}
+.facltDvBx .mainHdng::after{left: 0; right: auto; width: 7%}
+
+.stdntBx .affiBrdhdng{text-align: left; margin-bottom: 35px}
+.stdntBx .mainHdng::before{left: 0; right: auto; width: 15%}
+.stdntBx .mainHdng::after{left: 0; right: auto; width: 7%}
+.bx_1:nth-child(1) {padding-left: 0}
+.tblGrphSec{width: 100%; float: left;}
+.table thead { background: #dbdbdf;}
+.table > :not(:last-child) > :last-child > *, .table tbody, .table td, .table tfoot, .table th, .table thead, .table tr { border: 3px solid #fff;}
+.table > :not(:last-child) > :last-child > *, .table tbody, .table td, .table tfoot, .table th, .table thead, .table tr { border: 3px solid #fff;}
+.table > thead > tr > th {color: #000; font-size: 19px; font-weight: 600;}
+.table>:not(caption)>*>* {background-color: var(--bs-table-bg); border-bottom-width: 1px;  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); padding: 0.75rem;}
+.table tr td:nth-child(1) { background: #f6f6f7;}
+.table > tbody > tr > td { color: #000; font-size: 14px; font-weight: 600; cursor: pointer;}
+.table tr:nth-child(even) { background: #f6f6f7;}
+.table tr td:nth-child(1) {  background: #f6f6f7;}
+.sbHdng{padding-bottom: 15px; color: #1171d3}
+.tableDivIn{width: 100%; float: left; padding: 10px; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1);}
+.h600 {height: 400px;}
+.demoScroll {height: 400px; overflow-y: scroll;}
+.sc4::-webkit-scrollbar { width: 15px; height: 8px; position: relative; top: 15px;}
+.sc4::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba(45, 45, 45, 1);}
+.sc4::-webkit-scrollbar-thumb { background-color: #ff9933; background-image:-webkit-linear-gradient(45deg,rgba(18, 136, 7, 1) 30%,transparent 50%,rgba(255,255,255,1) 30%,transparent 50%,transparent 60%,rgba(255, 153, 51, 1) 30% ,transparent 60%); border-radius: 6px; top: 25px; position: relative; }
+.sc4::-moz-scrollbar-thumb { background-color: #ff9933; background-image:-webkit-linear-gradient(45deg,rgba(18, 136, 7, 1) 30%,transparent 50%,rgba(255,255,255,1) 30%,transparent 50%,transparent 60%,rgba(255, 153, 51, 1) 30% ,transparent 60%); border-radius: 6px;}
+.sc4::scrollbar-thumb { background-color: #ff9933; background-image:-webkit-linear-gradient(45deg,rgba(18, 136, 7, 1) 30%,transparent 50%,rgba(255,255,255,1) 30%,transparent 50%,transparent 60%,rgba(255, 153, 51, 1) 30% ,transparent 60%); border-radius: 6px;}
+.tblRgtGraphIn{width: 100%; float: left;}
+.facultyChrt{width: 100%; float: left;}
+.lgnReg .lgoDivIn{margin-top: 30px}
+.srchHdrDiv .lgoDivIn{margin-top: 28px}
+.vwBtn{float: right; background: #fda605; cursor: pointer; color: #fff; padding: 3px 6px}
+.serchBtn span{background: #3daaaf; display: inline-block; padding: 7px 8px; cursor: pointer; color: #fff; border-radius: 4px}
+.serchBtn{position: relative; top: 5px}
+.btn-info{background: #1171d3}
+.insIcn{float: right;}
+.mainHdng span.insIcn{float: right; font-size: 22px}
+.mainHdng span.insIcn a{display: inline-block; margin-right: 12px}
+.navBtmLang { width: 20%; float: right; position: relative; top: -18px; right: 5px; background: #fff; -webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px;    text-align: center; color: #000; height: 37px; line-height: 37px;}
+#langDivId { width: 100%; float: left;}
+.langIcnnew { cursor: pointer;}
+#langDivId .navBtmLangCnt { display: none;}
+.navBtmLangCnt { width: 294px; height: 150px; background: #fff; box-shadow: 0 0 5px rgb(0 0 0 / 50%); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;    position: absolute; top: 100%; left: -215px; padding: 15px;  z-index: 999999999;}
+.navBtmLangCnt ul li { width: 33.3%; float: left; line-height: 28px; list-style-type: none;}
+.navBtmLangCnt ul li a { text-decoration: none;}
+.navBtmLangCnt ul li a { color: #5c5e76; font-size: 16px;}
+#langDivId:hover .navBtmLangCnt {display: inline-block;}
+.langSDiv{position: relative; top: 49px; right: 70px;}
+.advanceSrchDiv{width: 100%; float: left;}
+.advanceSrchDiv{width: 100%; float: left; display: none;}
+.srchSecDivCls.showhide{display: inline-block;}
+.hdrTp {width: 100%;float: left;background: hsl(176deg 46% 48% / 34%); padding: 0px 0;}
+.tpTmIn { position: relative; top: 0px;}
+.tpTmIn span { display: inline-block; margin-right: 12px; color: #fff;}
+.tpTmIn a { color: #fff; text-decoration: none;}
+.indFlg img { width: 70px; float: right;}
+.lgnTpAply { margin-left: 15px; width: 114px; border-color: #b9b9b9;}
+.txtSizeIn { width: 100%; float: left; text-align: right; padding-top: 0px;color: #000;}
+.txtSizeIn a { color: #000; cursor: pointer; text-decoration: none; display: inline-block;
+  margin-right: 7px;}
+#myDiv { color: #000;}
+.increase { background: #fff; width: 27px; height: 27px; display: inline-block; text-align: center; font-weight: 600;}
+.decrease { background: #fff; width: 27px; height: 27px; display: inline-block;text-align: center; font-weight: 600;}
+.scrnRdrcnt { width: 100%; float: left; border-radius: 0rem 12rem 0rem 12rem; background-color: rgba(68, 75, 152, 0.9); padding: 55px; margin-bottom: 45px;}
+.skpTpcnt {width: 90%;float: left;color: #000;cursor: pointer;}
+.screenRdrCnt {width: 10%; float: left;}
+
+.stdntPrflSec{width: 100%; float: left;margin-top: 156px;}
+.abtmedoc .card-body{background-color: rgba(255, 134, 91, 0.02); width: 100%; float: left; padding: 45px 25px; border-radius: 32px 0 32px 0; margin-bottom: 45px; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1);}
+.acdmcQlf .card-body{background-color: rgba(40, 107, 218, 0.02); width: 100%; float: left; padding: 45px 25px; border-radius: 32px 0 32px 0; margin-bottom: 45px; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1);}
+.langD .card-body{background-color: rgba(255, 134, 91, 0.02); padding: 45px 25px; border-radius: 32px 0 32px 0; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1); float: left;  width: 100%;}
+.prfdLoc .card-body{background-color: rgba(255, 134, 91, 0.02); padding: 45px 25px; border-radius: 32px 0 32px 0; float: left; width: 100%; box-shadow: 0 0 2rem 0 rgba(189, 86, 46, 0.1);}
+.card-body h4{font-size: 22px; margin-bottom: 25px}
+.card-body p{font-size: 17px; margin-bottom: 10px}
+.card-body table{border:1px solid #b1bcca; margin-top: 35px}
+.card-body table th, .card-body table td{border-right: 1px solid #b1bcca; border-bottom: 1px solid #b1bcca; padding: 10px}
+.card-body .table > thead > tr > th{border-bottom: 1px solid #b1bcca; padding: 10px; background: #b7d4e8}
+.comapnyPrflCntSec{margin-top: 70px;}
+.recentJobDiv{width: 100%; float: left;}
+.recentJobDivIn{/*background-color: rgba(40, 107, 218, 0.2); width: 100%; float: left; padding: 45px 25px; border-radius: 32px 0 32px 0; margin-bottom: 45px;*/}
+.rcntJbOpprt{width: 100%; float: left; padding: 45px 0; color: #006ca5; font-size: 32px}
+.recentJobDiv{margin-top: 45px}
+.jobOneIn{width: 100%; float: left; background: #fff; border-radius:0px 32px 0px 32px; padding: 15px; text-align: center; transition: all 0.5s}
+.jobOneIn:hover{transition: all 0.5s; border-radius:32px 0px 32px 0px;}
+.jobOneIn h2{font-size: 20px; margin-bottom: 10px}
+.jobOneIn p{font-size: 17px; margin-bottom: 10px}
+.viewJbBtn{background: #3171db; text-decoration: none; padding: 8px 20px; display: inline-block; border-radius: 30px; color: #fff}
+.viewJbBtn:hover{background: #CF4902; color: #fff; text-decoration: none; color: #fff}
+.jobOne{margin-bottom: 35px}
+.hideDashCnt{display: none;}
+.btn-wrap{width: 100%; float: left; text-align: center; margin-top: 25px}
+.btnHdrGet{ margin-top: 20px }
+.trmsCndDivIn a{margin-right: 12px}
+.expreSecDiv{width: 100%; float: left;}
+.expreSecDiv img{width: 100%;}
+.card-body p{text-align: justify;}
+.compDivIn{background: #fff;box-shadow: 0px 0px 29px 6px rgba(0,0,0,0.2); text-align: center; padding: 45px;border-radius: 0 0; }
+.compDivIn h2{font-weight: 300; font-size: 28px}
+.compDivIn h2 span{display: block; font-weight: 600; margin-top: 10px}
+.dashMainCntDiv{width: 100%; float: left; margin-top: 60px}
+.statLstIn{padding: 17px 11px 18px; background-color: #fff; box-shadow: 0px 0px 29px 6px rgb(154 161 171 / 18%); border-top: 5px solid #CF4902;}
+.statLstIn table tr{border-top: 1px solid #dddddd;}
+.statLstIn table tr th{padding-left: 10px}
+.statLstIn table tr td{padding: 10px 0}
+.companyIndLstIn{padding: 17px 11px 18px; background-color: #fff; box-shadow: 0px 0px 29px 6px rgb(154 161 171 / 18%); border-top: 5px solid #CF4902;}
+.companyIndLstIn table tr{border-top: 1px solid #dddddd;}
+.companyIndLstIn table tr th{padding-left: 10px}
+.companyIndLstIn table tr td{padding: 10px 0}
+.mapLstIn iframe{border:none; background: transparent; width: 100%; height: 610px}
+.dashbrdTabDiv ul li.dashTabActv{background: #CF4902}
+.companySecInf .prflDetlIn h4{font-size: 20px; line-height: 28px}
+.prfdLocIn p{width: 48%; display: inline-block;}
+.comapnyPrflCntSec{margin-top: 70px;}
+.recentJobDiv{width: 100%; float: left;}
+.recentJobDivIn{/*background-color: rgba(40, 107, 218, 0.2); width: 100%; float: left; padding: 45px 25px; border-radius: 32px 0 32px 0; margin-bottom: 45px;*/}
+.rcntJbOpprt{width: 100%; float: left; padding: 45px 0; color: #006ca5; font-size: 32px}
+.recentJobDiv{margin-top: 45px}
+.jobOneIn{width: 100%; float: left; background: #fff; border-radius:0px 32px 0px 32px; padding: 15px; text-align: center; transition: all 0.5s}
+.jobOneIn:hover{transition: all 0.5s; border-radius:32px 0px 32px 0px;}
+.jobOneIn h2{font-size: 20px; margin-bottom: 10px}
+.jobOneIn p{font-size: 17px; margin-bottom: 10px}
+.viewJbBtn{background: #3171db; text-decoration: none; padding: 8px 20px; display: inline-block; border-radius: 30px; color: #fff}
+.viewJbBtn:hover{background: #CF4902; color: #fff; text-decoration: none; color: #fff}
+.jobOne{margin-bottom: 35px}
+.hideDashCnt{display: none;}
+.btn-wrap{width: 100%; float: left; text-align: center; margin-top: 25px}
+.btnHdrGet{ margin-top: 20px }
+.trmsCndDivIn a{margin-right: 12px}
+.expreSecDiv{width: 100%; float: left;}
+.expreSecDiv img{width: 100%;}
+.innerSecStrp {width: 100%; float: left; position: relative;  padding: 16px 0 30px; background: #1372d4}
+.prflPicIn { width: 100%;  float: left;  position: absolute;  top: 30px;  left: 0;}
+.prflPicIn img { width: 100%;  border: 2px solid #e5f9f9;  padding: 8px;}
+.prflDetlIn { width: 100%; float: left; text-align: right;}
+.prflDetlIn h2 { color: #fff; padding-bottom: 12px; font-size: 47px; font-family: 'Luxurious Roman', cursive;}
+.prflDetlIn h4 { color: #fff; padding-bottom: 12px;  font-size: 25px;}
+.companySecInf .prflDetlIn h4 { font-size: 20px; line-height: 28px;}
+.prflDetlIn p { color: #fff; padding-bottom: 5px; font-size: 20px;}
+.prflDetlIn p a{color: #fff; text-decoration: none;}
+.affDiv img{width: 100%}
+.couroffer ul{padding: 0; margin: 0; list-style-type: none;}
+.couroffer ul li{width: 50%; float: left;}
+.totalFacDivIn{width: 100%; float: left;}
+.totalFacDiv{margin-top: 45px; margin-bottom: 45px}
+.totalFacDiv table{width: 100%}
+.totalFacDiv table tr th{background: #3171db; color: #fff}
+.brkr{width: 100%; float: left; height: 25px; border-bottom: 1px solid #ccc; margin-bottom: 25px}
+.srchHdrDiv .lgoDivIn{text-align: right;}
+.srchSecDivCls{display: none; position: relative;}
+.closeBtn{display: inline-block; float: right; cursor: pointer; font-size: 25px; position: absolute; top: 0; right: 11px}
+.academicYer{width: 150px; float: right;}
+.srchCateDiv{width: 100%; float: right;}
+.someIcnIn{width: 100%; float: left;}
+.insIcn a{margin-right: 12px; font-size: 23px}
+.eduDiv{margin-top: 15px}
+.mar-30{margin-bottom: 60px}
+.mar-30 ul{padding-left: 15px}
+.langKnow ul li{width: 45%; float: left; margin-right: 10px}
+.detlBtn{background: #fff; text-decoration: none;}
+.detlBtn:hover{background: #fff}
+.detlBtn a{text-decoration: none;}
+.detlBtn a:hover{background: #fff}
+.vwBtnIn{display: inline-block; float: none; cursor: pointer; padding: 0px 6px; font-size: 30px; background: #21b60e}
+footer{width: 100%; float: left; padding: 15px 0; background: #1171d3; text-align: center; margin-top: 75px}
+footer a{color: #fff; text-decoration: none;}
+footer a:hover{color: #fff}
+.bckBtnBtn{float: right;position: relative; top: 10px; right: 15px}
+.langDIn ul li a{text-decoration: none;}
+.lstdiv ul li{width: 50%; float: left;}
+ul.halfDiv li{width: 50%; float: left;}
+.tittle  h3{font-size: 22px; font-weight: 600;}
+#business{display: none;}
+#nodiv{display: none;}
+#nodiv2{display: none;}
+.sidebars{width:290px; border-radius: 20px; display: inline-block; position: absolute;left: 15px; top: 200px; padding: 10px 20px 6px 20px;box-shadow: 0 0 22px -8px #3daaaf;}
+.maindiv{margin-left: 316px;display: inline-block;}
+#tabbtn li{list-style: none;}
+#tabbtn li a{color: #000; text-decoration: none; border-bottom: 0.5px solid #E6E6E6; padding: 8px 0px; display: block;}
+#tabbtn li:last-child a{border-bottom: none;}
+#tabbtn li.shows a{color: #3daaaf; position: relative;}
+.shows span{color: #3daaaf!important; position: relative;}
+#tabbtn li.shows a::after{content: ''; background-color: #3daaaf; height: 84%; width: 7px;  position: absolute; right: -20px; top: 0; bottom: 0; border-radius: 5px;}
+.card-header .title {
+    font-size: 17px;
+    color: #000;
+}
+.card-header .accicon {
+  float: right;
+  font-size: 20px;  
+  width: 1.2em;
+}
+.card-header{
+  cursor: pointer;
+  border-bottom: none;
+}
+.card{
+  border: 1px solid #ddd;
+}
+.card-body{
+  border-top: 1px solid #ddd;
+}
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+.card.box {margin: 10px 0; border-radius: 44px!important; width: 100%; display: inline-block!important;background: linear-gradient(135deg, #F2F2F2 0%, #FFFFFF 100%);
+border: 2px solid #43b4ac !important;
+box-shadow: -5px 5px 10px rgba(224, 224, 224, 0.2), 5px -5px 10px rgba(224, 224, 224, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(224, 224, 224, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 224, 224, 0.5);
+}
+.card.box .active{background: #43b4ac;border: 1px solid #43b4ac!important;box-shadow: -1px 1px 2px rgba(40, 131, 32, 0.2), 1px -1px 2px rgba(40, 131, 32, 0.2), -1px -1px 2px rgba(48, 161, 39, 0.9), 1px 1px 3px rgba(40, 131, 32, 0.9), inset 1px 1px 2px rgba(48, 161, 39, 0.3), inset -1px -1px 2px rgba(40, 131, 32, 0.5);
+border-radius: 40px !important;}
+.accordion>.card>.card-header{padding:25px;}
+#main {
+  margin: 50px 0;
+}
+.card-body{border-top: none;}
+#main #faq .card {
+  margin-bottom: 30px;
+  border: 0;
+}
+
+#main #faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+          box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+
+#main #faq .card .card-header .btn-header-link {
+  color: #fff;
+  display: block;
+  text-align: left;
+  background: #FFE472;
+  color: #222;
+  padding: 20px;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+  background: #A541BB;
+  color: #fff;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+#main #faq .card .collapsing {
+  background: #FFE472;
+  line-height: 30px;
+}
+
+#main #faq .card .collapse {
+  border: 0;
+}
+
+#main #faq .card .collapse.show {
+  background: #FFE472;
+  line-height: 30px;
+  color: #222;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px){
+.hdrCntrIn{margin-top: 25px}
+footer{margin-top: 0}
+}
+@media only screen and (max-width: 767px){
+
+}
